@@ -16,12 +16,12 @@ The log files will be located in `../ssh_honeypy/log_files/..`
 
 This honeypot was written with modularity in mind to support future honeypot types (Telnet, HTTPS, SMTP, etc). As of right now there are two honeypot types supported.
 
-**SSH**
+# **SSH**
 The project started out with only supported SSH. Use the following instructions above to provision an SSH-based honeypot which emulates a basic shell.
 
 💡 `-t / --tarpit`: A tarpit is a security mechanism designed to slow down or delay the attempts of an attacker trying to brute-force login credentials. Leveraging Python's time module, a very long SSH-banner is sent to a connecting shell session. The only way to get out of the session is by closing the terminal.
 
-**HTTP**
+# **HTTP**
 Using Python Flask as a basic template to provision a simple web service, HoneySnare impersonates a default WordPress wp-admin login page. Username / password pairs are collected.
 
 There are default credentials accepted, admin and password. Username and password can be changed using the `-u / --username: Username`. `-w / --password`: Password arguments.
